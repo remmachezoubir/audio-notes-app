@@ -6,7 +6,10 @@ function Login() {
   const navigate = useNavigate()
   return (
     <div className='bg-black h-screen overflow-hidden w-full flex flex-col items-center justify-center '>
-      <h1 className=' card-title text-primary-content top-2 text-3xl absolute'>Ventur.</h1>
+      <div className='text-primary-content top-0 p-3 bg-black w-full flex justify-center absolute'>
+
+      <h1 className=' card-title text-3xl'>Ventur.</h1>
+      </div>
       <h1 className='text-2xl text-primary-content mb-4 font-bold block '>Login </h1>
       <div className='bg-base-100 p-2 rounded-lg'>
         <label className='text-lg text-primary-content m-1 block' htmlFor="email">Email</label>
