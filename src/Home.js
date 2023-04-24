@@ -1,7 +1,7 @@
 import React from 'react'
 import {  Route , Routes } from 'react-router-dom';
-import Notes from './components/Notes'
-import WriteNewNote from './components/WriteNewNote';
+import Notes from './components/Notes/Notes'
+import WriteNewNote from './components/Notes/WriteNewNote';
 import Settings from './components/Settings';
 import { useStateContext } from './context/MyFirstProvider';
 import {GoThreeBars} from 'react-icons/go'

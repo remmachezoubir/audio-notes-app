@@ -4,8 +4,8 @@ import Sidebar from './components/Sidebar'
 import { useEffect } from 'react'
 import { useStateContext } from './context/MyFirstProvider'
 import { Route , Routes} from 'react-router-dom'
-import Login from './components/Login'
-import SignUp from './components/SignUp'
+import Login from './components/auth/Login'
+import SignUp from './components/auth/SignUp'
 export default function App() {
   const {setScreenSize , ScreenSize } = useStateContext()
   

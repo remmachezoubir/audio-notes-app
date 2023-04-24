@@ -16,8 +16,11 @@ export default function Sidebar() {
 
   return (
     <>
+    <div className=' w-80 h-screen bg-slate-900 opacity-95  fixed z-20'>
+    
+    </div>
    {ScreenSize>900 && <div className='w-80 h-screen opacity-0 inline-block overflow-hidden'></div>}
-   <div className={` p-4  bg-slate-900 inline-block w-80   top-0 left-0 h-screen fixed  overflow-scroll z-30  `}>
+   <div className={` p-4   inline-block w-80   top-0 left-0 h-screen fixed  overflow-scroll z-30  `}>
      {ScreenSize<=900 && <button className='btn  btn-circle absolute shadow-lg top-1 right-1 z-10' onClick={()=>setActiveSidebar(false)}><GoX size={25}/></button>}
      <div className=' w-full flex justify-center'>
       {<h1 className='text-xl font-bold text-primary-content '>Ventur.</h1>}
@@ -45,7 +48,7 @@ export default function Sidebar() {
             navigate('Settings')
       }}>Settings</button>
       {/* delete this line later  */}
-    <button className={` border-2 border-base-100  text-xl font-semibold focus:bg-secondary hover:bg-secondary text-primary-content block mt-10   btn  ${ location.pathname=='/Settings' && 'bg-secondary'}`} onClick={logout}>log out </button>
+    <button className={` border-2 border-base-100  text-xl font-semibold focus:bg-secondary hover:bg-secondary text-primary-content block mt-10   btn btn-info`} onClick={logout}>log out </button>
 
 
         <Micro/>
