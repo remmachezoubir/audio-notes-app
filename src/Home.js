@@ -7,6 +7,8 @@ import { useStateContext } from './context/MyFirstProvider';
 import {GoThreeBars} from 'react-icons/go'
 import PageNotFound from './components/PageNotFound';
 export default function Home() {
+      
+  
   const {ScreenSize , ActiveSidebar , setActiveSidebar} =useStateContext()
   return (
       <div className='  bg-black inline-block  pt-4 overflow-y-scroll absolute min-h-screen '>

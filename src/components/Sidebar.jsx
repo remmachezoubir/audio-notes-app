@@ -9,6 +9,10 @@ export default function Sidebar() {
   const navigate =useNavigate()
 
   const location = useLocation()
+  //! delete this one later 
+  const logout =()=>{
+    navigate('login')
+  }
 
   return (
     <>
@@ -40,6 +44,8 @@ export default function Sidebar() {
             setActiveSidebar(false)      
             navigate('Settings')
       }}>Settings</button>
+      {/* delete this line later  */}
+    <button className={` border-2 border-base-100  text-xl font-semibold focus:bg-secondary hover:bg-secondary text-primary-content block mt-10   btn  ${ location.pathname=='/Settings' && 'bg-secondary'}`} onClick={logout}>log out </button>
 
 
         <Micro/>

@@ -11,14 +11,14 @@ export default function Settings() {
   return (
     <>
       <h1 className='text-2xl ml-4 mt-2 text-primary-content  font-semibold '>Settings</h1>
-    <div className='bg-base-100 p-4 w-96 mx-8 mt-10 rounded-xl'>
+    <div className='bg-base-100 p-4 w-72 sm:w-96 mx-8 mt-10 rounded-xl'>
       <h2 className='card-title mb-4 text-primary-content'>General</h2>
         <span className='flex justify-between p-2  '> <span>theme </span> <span>theme </span></span>
         <span className='flex justify-between p-2  '> <span>theme </span> <span>theme </span></span>
         <span className='flex justify-between p-2  '> <span>theme </span> <span>theme </span></span>
     </div>
     
-    <div className='bg-base-100 p-4 w-96 mx-8 mt-10  rounded-xl '>
+    <div className='bg-base-100 p-4 w-72 sm:w-96 mx-8 mt-10  rounded-xl '>
       <h2 className='card-title mb-4 text-primary-content'>Profile</h2>
         <span className='flex justify-between p-2  '> <span>theme </span> <span>theme </span></span>
         <span className='flex justify-between p-2  '> <span>theme </span> <span>theme </span></span>
