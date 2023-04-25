@@ -30,7 +30,7 @@ export default function Sidebar() {
     {/* <Link to={'WriteNote'}> write a new note </Link> */}
     {/* i used the navigate hook  instead of the link cause i needed to the button for the style  + they both works the same way  */}
 
-    <button className={` border-2 border-base-100 text-xl  text-center w-full font-semibold btn  focus:bg-secondary hover:bg-secondary text-primary-content ${ location.pathname=='/' && 'bg-secondary'}  block mt-10   `} onClick={()=> {
+    <button className={` border-2 border-base-100 text-xl  text-center w-full font-semibold btn  focus:bg-blue-800 hover:bg-blue-700 text-primary-content ${ location.pathname=='/' && 'bg-blue-700'}  block mt-10   `} onClick={()=> {
       navigate('/')
       window.scrollTo(0 ,0)
       setActiveSidebar(false)
@@ -42,13 +42,13 @@ export default function Sidebar() {
       setActiveSidebar(false)
        }}>  new note </button> */}
    
-    <button className={` border-2 border-base-100  text-xl text-center w-full font-semibold focus:bg-secondary hover:bg-secondary text-primary-content block mt-10   btn  ${ location.pathname=='/Settings' && 'bg-secondary'}`} onClick={()=>{
+    <button className={` border-2 border-base-100  text-xl text-center w-full font-semibold focus:bg-blue-800 hover:bg-blue-700 text-primary-content block mt-10   btn  ${ location.pathname=='/Settings' && 'bg-blue-700'}`} onClick={()=>{
             window.scrollTo(0 ,0)
             setActiveSidebar(false)      
             navigate('Settings')
       }}>Settings</button>
       {/* delete this line later  */}
-    <button className={` border-2 border-base-100  text-xl font-semibold focus:bg-secondary hover:bg-secondary text-primary-content block mt-10   btn btn-info`} onClick={logout}>log out </button>
+    <button className={` border-2 border-base-100  text-xl font-semibold focus:bg-blue-800 hover:bg-blue-700 text-primary-content block mt-10   btn btn-info`} onClick={logout}>log out </button>
 
 
         <Micro/>
