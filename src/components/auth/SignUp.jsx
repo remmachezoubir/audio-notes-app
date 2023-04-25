@@ -22,7 +22,7 @@ function SignUp() {
         <input className='text-lg text-primary-content p-2 border-primary-focus bg-base-300 outline-none focus:border rounded-md  ' placeholder='password' type='password' required name='password' id='password' />
         <div className=' w-full flex justify-center'>
 
-          <button type='button' className=' p-2 m-2 mt-3 text-lg text-center font-bold rounded-lg w-32 bg-blue-600  btn capitalize outline-none hover:bg-blue-700  hover:scale-105 border-none' onClick={() => {
+          <button type='button' className=' p-2 m-2 mt-3 text-lg text-primary-content text-center font-bold rounded-lg w-32 bg-blue-600  btn capitalize outline-none hover:bg-blue-700  hover:scale-105 border-none' onClick={() => {
             navigate('/')
           }}>Sign up </button>
         </div>

@@ -20,7 +20,7 @@ export default function Settings() {
     
     <div className='bg-base-100 p-4 w-72 sm:w-96 mx-8 mt-10  rounded-xl '>
       <h2 className='card-title mb-4 text-primary-content'>Profile</h2>
-        <span className='flex justify-between p-2  '> <span>theme </span> <span>theme </span></span>
+        <span className='flex justify-between p-2  '> <span>theme </span> <span> <input type="checkbox" className=' toggle toggle-md toggle-success' /> </span></span>
         <span className='flex justify-between p-2  '> <span>theme </span> <span>theme </span></span>
         <span className='flex justify-between p-2  '> <span>theme </span> <span>theme </span></span>
     </div>
